@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Opening ShiftNG…</title>
+</head>
+<body style="font-family:sans-serif;text-align:center;padding:60px 20px;">
+  <p>Opening ShiftNG…</p>
+  <p><a id="open-link" href="#">Tap here if it doesn't open automatically</a></p>
+
+  <script>
+    // Update this if your Expo Go dev server address changes, or switch it to
+    // 'shiftng://reset-password' once you're testing with a production build.
+    var APP_DEEP_LINK_BASE = 'exp://10.0.4.57:8081/--/reset-password';
+
+    var params = window.location.search; // e.g. "?token_hash=...&type=recovery"
+    var appUrl = APP_DEEP_LINK_BASE + params;
+
+    document.getElementById('open-link').href = appUrl;
+    window.location.href = appUrl;
+  </script>
+</body>
+</html>
