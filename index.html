@@ -11,8 +11,9 @@
     a.button { display: block; max-width: 320px; margin: 0 auto 14px; padding: 16px; border-radius: 10px;
                font-size: 17px; font-weight: bold; text-decoration: none; }
     a.app { background: #0E5C35; color: #fff; }
-    a.test { background: #fff; color: #0E5C35; border: 2px solid #539940; }
     .small { font-size: 13px; color: #555; }
+    .team { margin-top: 40px; font-size: 12px; }
+    .team a { color: #555; padding: 12px 8px; display: inline-block; }
   </style>
 </head>
 <body>
@@ -20,10 +21,10 @@
   <p>Open this page on the phone where ShiftNG is installed, then tap the button below.</p>
 
   <a id="open-app" class="button app" href="#">Open in the ShiftNG app</a>
-  <a id="open-test" class="button test" href="#">Testing with Expo Go? Open here</a>
-
   <p class="small">The link works once and expires after an hour. If it has expired, ask for a new
     one from "Forgot password" in the app.</p>
+
+  <p class="team"><a id="open-test" href="#">For the ShiftNG team: open in Expo Go</a></p>
 
   <script>
     // The installed app (test and store builds) opens shiftng:// links.
